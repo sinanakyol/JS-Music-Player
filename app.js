@@ -93,6 +93,21 @@ progressBar.addEventListener("input", () => {
 });
 
 let sesDurumu = "sesli";
+
+volumeBar.addEventListener("input", (e) => {
+  const value = e.target.value;
+  audio.volume = value / 100; // volume property'si 0-1 arasında olduğu için; 0-100 arası olan volumeBar değerini 100'e böldük.
+  if (audio.volume == 0) {
+    audio.muted = true;
+    sesDurumu = "sessiz";
+    volume.classList = "fa-solid fa-volume-xmark";
+  } else {
+    audio.muted = false;
+    sesDurumu = "sesli";
+    volume.classList = "fa-solid fa-volume-high";
+  }
+});
+
 volume.addEventListener("click", () => {
   if (sesDurumu === "sesli") {
     audio.muted = true;
