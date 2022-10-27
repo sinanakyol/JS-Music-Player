@@ -1,0 +1,28 @@
+.container {
+  width: 350px;
+}
+
+#controls i {
+  font-size: 30px;
+  color: orangered;
+  margin-right: 20px;
+}
+
+#progress {
+  margin-bottom: 20px;
+}
+
+#progress .times,
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#progress-bar {
+  width: 100%;
+}
+
+#music-image {
+  width: 100%;
+}
