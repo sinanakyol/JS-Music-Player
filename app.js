@@ -92,6 +92,17 @@ progressBar.addEventListener("input", () => {
   audio.currentTime = progressBar.value;
 });
 
+let sesDurumu = "sesli";
 volume.addEventListener("click", () => {
-  console.log("aa");
+  if (sesDurumu === "sesli") {
+    audio.muted = true;
+    sesDurumu = "sessiz";
+    volume.classList = "fa-solid fa-volume-xmark";
+    volumeBar.value = 0;
+  } else {
+    audio.muted = false;
+    sesDurumu = "sesli";
+    volume.classList = "fa-solid fa-volume-high";
+    volumeBar.value = 100;
+  }
 });
