@@ -1,28 +1,16 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .container {
-  width: 350px;
+  width: 400px;
 }
 
-#controls i {
-  font-size: 30px;
-  color: purple;
-  margin-right: 20px;
-}
-
-#progress {
-  margin-bottom: 20px;
-}
-
-#progress .times,
-#controls {
+#progress .times {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#progress-bar {
-  width: 100%;
-}
-
-#music-image {
-  width: 100%;
 }
