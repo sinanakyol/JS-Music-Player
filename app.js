@@ -56,13 +56,13 @@ const nextMusic = () => {
 
 const pauseMusic = () => {
   container.classList.remove("playing");
-  play.classList = "fa-solid fa-play";
+  play.querySelector("i").classList = "fa-solid fa-play";
   audio.pause();
 };
 
 const playMusic = () => {
   container.classList.add("playing");
-  play.classList = "fa-solid fa-pause";
+  play.querySelector("i").classList = "fa-solid fa-pause";
   audio.play();
 };
 
