@@ -53,7 +53,11 @@
           </div>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary btn-sm">
+          <button
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="collapse"
+            data-bs-target="#music-list"
+          >
             <i class="fa-solid fa-bars"></i>
           </button>
           <div class="volume-container">
@@ -66,6 +70,9 @@
               class="form-range"
             />
           </div>
+        </div>
+        <div id="music-list" class="collapse">
+          <ul class="list-group list-group-flush"></ul>
         </div>
       </div>
     </div>
