@@ -20,3 +20,8 @@ body {
 .volume-container i {
   margin-right: 5px;
 }
+
+li.playing {
+  background-color: #ff731d;
+  color: #fff;
+}
