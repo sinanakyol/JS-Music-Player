@@ -1,3 +1,25 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(243, 190, 104);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(243, 190, 104);
+}
+
 body {
   display: flex;
   align-items: center;
@@ -6,7 +28,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 375px;
 }
 
 #progress .times,
@@ -22,6 +44,47 @@ body {
 }
 
 li.playing {
-  background-color: #ff731d;
+  background-color: tomato;
   color: #fff;
+}
+
+.card {
+  background: linear-gradient(30deg, rgb(122, 237, 199), rgb(243, 190, 104));
+  border-radius: 15px;
+  border: none;
+}
+
+#controls button {
+  background-color: tomato;
+  border-color: tomato;
+}
+
+#music-image {
+  border-radius: 50%;
+  padding: 20px;
+  height: 200px;
+}
+
+.form-range[type="range"] {
+  accent-color: rgb(0, 0, 255);
+}
+
+.form-range::-webkit-slider-thumb {
+  background: tomato;
+}
+
+.form-range::-moz-range-thumb {
+  background: tomato;
+}
+
+.form-range::-ms-thumb {
+  background: tomato;
+}
+
+.bg-badge {
+  background-color: rgb(122, 237, 199, 0.7);
+}
+
+.badge-color {
+  color: tomato;
 }
