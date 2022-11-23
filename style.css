@@ -65,10 +65,6 @@ li.playing {
   height: 200px;
 }
 
-.form-range[type="range"] {
-  accent-color: rgb(0, 0, 255);
-}
-
 .form-range::-webkit-slider-thumb {
   background: tomato;
 }
