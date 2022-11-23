@@ -1,3 +1,5 @@
-# Music-Player
+# Music Player (mobile)
 
-_with Javascript_
+_developed using Javascript_
+
+![ss](img/ss.png)
