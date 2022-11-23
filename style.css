@@ -77,10 +77,11 @@ li.playing {
   background: tomato;
 }
 
-.badge-bg {
+.badgee-color {
   background-color: rgb(122, 237, 199, 0.7);
-}
-
-.badge-color {
   color: tomato;
+  border-radius: 10rem;
+  padding: 0 6px;
+  font-size: small;
+  font-weight: bold;
 }
