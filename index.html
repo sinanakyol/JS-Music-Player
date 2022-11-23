@@ -22,14 +22,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="card shadow-lg rounded">
-        <img
-          id="music-image"
-          src=""
-          alt=""
-          class="card-img-top"
-          style="max-height: 200px"
-        />
+      <div class="card shadow-lg">
+        <img id="music-image" src="" alt="" class="card-img-top" />
         <audio id="audio" src=""></audio>
         <div id="music-details" class="text-center border-bottom my-3">
           <p id="title"></p>
@@ -37,7 +31,12 @@
         </div>
         <div class="card-body">
           <div id="progress">
-            <input type="range" id="progress-bar" class="form-range" />
+            <input
+              type="range"
+              id="progress-bar"
+              class="form-range"
+              style="color: tomato"
+            />
             <div class="times">
               <span id="current-time">0.00</span>
               <span id="duration">0.00</span>
@@ -61,7 +60,7 @@
         <div class="card-footer">
           <button
             class="btn btn-primary btn-sm"
-            style="background-color: #ff731d; border: none"
+            style="background-color: tomato; border: none"
             data-bs-toggle="collapse"
             data-bs-target="#music-list"
           >
@@ -80,8 +79,8 @@
         </div>
         <div id="music-list" class="collapse">
           <ul
-            class="list-group list-group-flush"
-            style="overflow: scroll; height: 150px"
+            class="list-group list-group-flush rounded-bottom"
+            style="overflow-y: scroll; height: 150px"
           ></ul>
         </div>
       </div>
