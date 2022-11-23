@@ -133,7 +133,7 @@ const displayMusicList = (list) => {
     let liTag = `
     <li li-index="${i}" onclick="selectedMusic(this)" class="list-group-item d-flex justify-content-between align-items-center">
       <span>${list[i].getName()}</span>
-      <span id="music-${i}" class="badge bg-badge badge-color rounded-pill"></span>
+      <span id="music-${i}" class="badge badge-bg badge-color rounded-pill"></span>
       <audio class="music-${i}" src="mp3/${list[i].file}"></audio>
     </li>
     `;
